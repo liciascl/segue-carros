@@ -13,11 +13,6 @@ Use este comando:
 Para transformar seus arquivos tratados em mp4 novamente use o comando:
 
 ```bash
-./ffmpeg/ffmpeg -framerate 30 -i out/frame_%04d_boxes.png -c:v libx264 -crf 28 -pix_fmt yuv420p saida.mp4
+./ffmpeg/ffmpeg -framerate 30 -i out/frame_%04d.png -c:v libx264 -crf 18 -pix_fmt yuv420p saida.mp4
 ```
 
-Para testar o código base com 100 frames execute desta forma:
-
-```bash
-srun --partition=gpu base 100
-```
