@@ -16,3 +16,4 @@ Para transformar seus arquivos tratados em mp4 novamente use o comando:
 ./ffmpeg/ffmpeg -framerate 30 -i out/frame_%04d.png -c:v libx264 -crf 18 -pix_fmt yuv420p saida.mp4
 ```
 
+# Cuidado para não subir as imgens e os videos no github, ele vai reclamar
